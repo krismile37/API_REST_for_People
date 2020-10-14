@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя страница приложения</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="banner">Демо-приложение "People"</h1>
+        <div class="section editor">
+            <label for="fname">Имя
+                <input id="fname" type="text" />
+            </label>
+            <br />
+            <label for="lname">Фамилия
+                <input id="lname" type="text" />
+            </label>
+            <br />
+            <button id="create">Создать</button>
+            <button id="update">Обновить</button>
+            <button id="delete">Удалить</button>
+            <button id="reset">Сброс</button>
+        </div>
+        <div class="people">
+            <table>
+                <caption>Люди</caption>
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Время обновления</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="error">
+        </div>
+    </div>
+</body>
+<script src="static/js/home.js"></script>
+</html>
